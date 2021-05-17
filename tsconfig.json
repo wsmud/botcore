@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "lib": ["ESNext"],
+    "target": "ES6",
+    "alwaysStrict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "Node",
+    "declaration": true,
+    "noImplicitAny": true,
+    "baseUrl": ".",
+    "outDir": "bundle"
+  },
+  "include": ["source/**/*.ts"]
+}
