@@ -1,0 +1,24 @@
+name: Node.js Package
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 14
+          check-latest: true
+          registry-url: https://registry.npmjs.org/
+      - run: |
+          yarn --frozen-lockfile
+          yarn lint
+          yarn test
+          yarn build
+          yarn publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

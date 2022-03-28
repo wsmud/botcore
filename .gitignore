@@ -1,0 +1,6 @@
+node_modules
+bundle
+coverage
+logs
+*.log
+data
