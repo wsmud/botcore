@@ -1,6 +1,6 @@
 {
   "name": "@wsmud/botcore",
-  "version": "0.0.0",
+  "version": "1.0.1",
   "description": "武神传说机器人核心库",
   "main": "bundle/index.cjs.js",
   "module": "bundle/index.es.js",
